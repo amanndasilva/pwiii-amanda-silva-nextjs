@@ -1,0 +1,14 @@
+create database testeapi;
+use testeapi;
+
+create table users(
+id int auto_increment not null,
+nome varchar(60),
+email varchar(60),
+primary key (id)
+);
+
+insert into users (nome, email) values
+('Amanda', 'amanda@email.com');
+
+drop database testeapi;

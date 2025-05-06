@@ -10,7 +10,7 @@ async function connectToDatabase(){
 }
 
 export default async function handler(req, res){
-    if (req.method !== 'DELETE') {
+    if(req.method !== 'DELETE') {
         return res.status(405).json({ error: 'Método não permitido.'});
     }
 
